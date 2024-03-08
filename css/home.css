@@ -1,0 +1,124 @@
+
+
+.js .home{
+    opacity: 1; /* mudar para 0 caso queira entrar com musica */
+    
+}
+
+.home.ativo{
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 1.5s;
+    
+}
+
+.save{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    animation:  aparecer 1s ease-in-out forwards;
+    position: absolute;
+bottom: 0;
+
+}
+.home {
+   /*  background-image: url("../img/fundo.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+    
+    
+  
+    
+    
+}
+
+.flor2{
+position: absolute;
+bottom: 0;
+animation:  aparecer2 1s ease-in-out forwards;
+}
+
+
+  .container_nomes{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    position: relative;
+
+
+  }
+
+
+
+
+
+  .nomes {
+    padding-top: 80px;
+    color: #A1AB93;
+    text-align: center;   
+    justify-self: end;
+    align-self: end;
+  
+}
+
+.container-save{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.saveParagrafo{
+    color: #998777;
+    letter-spacing: 20px;
+    
+}
+
+.saveParagrafo2{
+color: #A1AB93;
+
+line-height: 0.8 !important;
+
+}
+
+.data{
+    color: #998777;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+
+
+@keyframes aparecer {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px; /* A posição final da imagem na tela */
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer2 {
+    0% {
+        bottom: -40px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0; /* A posição final da imagem na tela */
+        opacity: 1;
+    }
+}
+
+
+
